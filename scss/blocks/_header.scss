@@ -1,0 +1,192 @@
+.header {
+    padding: 20px 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    .logo {
+        float: left;
+        margin: 0 40px 0 0;
+        width: 81px;
+        height: 38px;
+        img {
+            width: 100%;
+        }
+    }
+    .btn-orange {
+        float: right;
+    }
+}
+.menu {
+    float: left;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        float: left;
+    }
+    a {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 150%;
+        text-decoration: none;
+        color: #282828;
+        padding: 10px 20px;
+        &:hover {
+            color: #4E7FCE;
+            transition: all 0.2s ease;
+        }
+    }
+}
+.btn-login {
+    padding: 10px 50px 0 34px;
+    float: right;
+
+    i {
+        font-style: normal;
+        position: relative;
+    }
+    i:after {
+        content: '';
+        background: url(../images/svg/icon6.svg);
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+}
+.language {
+    float: right;
+    position: relative;
+    padding: 0 30px;
+    margin: 5px 0 0 20px;
+    &:before {
+        content: '';
+        background: url(../images/svg/icon7.svg);
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 2px;
+        left: 9px;
+    }
+}
+.select2-search--dropdown {
+    display: none;
+}
+.select2-container--default {
+    .select2-selection--single {
+        border: none;
+        background: none;
+        .select2-selection__rendered {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 28px;
+        }
+        .select2-selection__arrow {
+            top: 0px;
+            right: 14px;
+            b {
+                background: url(../images/svg/icon9.svg);
+                width: 8px;
+                height: 5px;
+                border: none;
+            }
+        }
+    }
+    .select2-results__option--highlighted.select2-results__option--selectable {
+        color: #4E7FCE;
+        background: none;
+    }
+    .select2-results__option--selected {
+        color: #9BA0B9;
+        background: none;
+    }
+}
+.select2-dropdown {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+}
+.select2-results__option {
+    text-align: center;
+    padding: 5px 11px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9BA0B9;
+}
+.select2-results__options {
+    padding: 5px 0;
+}
+.select2-container--open {
+    .select2-dropdown--below {
+        width: 100px !important;
+    }
+}
+.select2-container--open {
+    .select2-selection__arrow {
+        b {
+            transform: rotate(180deg);
+            transition: all 0.2s ease;
+        }
+    }
+}
+.burger {
+    display: none;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    float: right;
+    margin: 5px 0 0;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        background: #4E7FCE;
+        border-radius: 1px;
+        width: 20px;
+        height: 2px;
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            background: #4E7FCE;
+            border-radius: 1px;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            top: -6px;
+            left: 0;
+
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            background: #4E7FCE;
+            border-radius: 1px;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+    }
+}
+.burger.active {
+    span {
+        background: transparent;
+        &:before {
+            top: 0;
+            transform: rotate(-45deg);
+            transition: all 0.2s ease;
+        }
+        &:after {
+            top: 0;
+            transform: rotate(45deg);
+            transition: all 0.2s ease;
+        }
+    }
+}
